@@ -102,6 +102,13 @@ function App() {
   );
 }
 ```
+# [Babel](https://babeljs.io/docs/en/) vs [Typescript](https://www.typescriptlang.org/)
+These two are not directly comparable, but both do transpile code into production ready Javascript. 
+
+Babel transpile new/next gen Javascript features that may not be supported by older (or current browsers) into code that can be used in legacy/current browsers.  
+
+Typescript is a language built on top of javascript that allows for typing. Typescript can handle the transpiling that Babel does
+
 
 # Code Formatting
 Tools for maintaining a uniform styling across all devs/editors.
