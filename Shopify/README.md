@@ -1,6 +1,6 @@
 # Shopify
 
-Shopify has two versions of their CLI, `Theme Kit` and `Shopify CLI`. `Theme Kit` is used for stores up to version 2 and `Shopify CLI` is for versions 2+.##
+Shopify has two versions of their CLI, `Theme Kit` and `Shopify CLI`. `Theme Kit` is used for stores up to version 2 and `Shopify CLI` is for versions 2+.
 
 ## Theme Kit
 
@@ -21,6 +21,27 @@ Changes made from the local version will update almost immediately to the live s
 - Github can be connected directly to Shopify for ease of dev/publishing
 - `Shopify CLI` allows for better dev experience. Hot reload with local dev server, publish from terminal, theme check for catching issues, populate dummy data
 - By the end of the year, it will be required that all themes in the Shopify Theme Store and apps in the Shopify App Store use the new infrastructure.
+
+#### Installation
+
+[Shopify CLI](https://shopify.dev/themes/tools/cli/installation)
+
+#### Dev
+
+Currently there is a bug in the CLI when first creating the shop, but is solved by following [this solution](https://github.com/Shopify/shopify-cli/issues/1309#issuecomment-873221248)
+
+- Create dev store at partners.shopify.com
+- Log into store in CLI
+
+```
+shopify login --store=[STORE_NAME].myshopify.com
+```
+
+- Serve via CLI
+
+```
+shopify theme serve
+```
 
 ## Links
 
