@@ -21,6 +21,7 @@ Changes made from the local version will update almost immediately to the live s
 - Github can be connected directly to Shopify for ease of dev/publishing
 - `Shopify CLI` allows for better dev experience. Hot reload with local dev server, publish from terminal, theme check for catching issues, populate dummy data
 - By the end of the year, it will be required that all themes in the Shopify Theme Store and apps in the Shopify App Store use the new infrastructure.
+- Filtering is greatly upgraded
 
 #### Installation
 
@@ -43,7 +44,27 @@ shopify login --store=[STORE_NAME].myshopify.com
 shopify theme serve
 ```
 
+- Add dummy products
+
+```
+shopify populate products
+```
+
+- Push theme in order to view in Shopify environment (pushing to Git does not push changes to Shopify)
+```
+shopify theme push
+```
+
+#### Notes
+When working locally, it is easy to mistakenly pull changes from the shopify environment that will override your local version and vice versa. To avoid this, only work in one environment or the other at a time, saving/pushing before switching to the other environment.
+
+#### Update to 2.0
+Migrate Liquid templates into JSON templates.
+
+- Move Liquid and HTML code to sections
+
 ## Links
 
 [API Documentation](https://shopify.dev/api/)
 [Spotify Cheatsheet](https://www.shopify.com/partners/shopify-cheat-sheet?shpxid=a2be037a-2610-484B-641E-F0FF61CEA0C9)
+[Online Store 2.0 (Shopify CLI) Introduction](https://www.shopify.com/partners/blog/shopify-online-store)
