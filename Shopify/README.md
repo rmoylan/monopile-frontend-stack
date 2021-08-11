@@ -62,6 +62,20 @@ When working locally, it is easy to mistakenly pull changes from the shopify env
 Migrate Liquid templates into JSON templates.
 
 - Move Liquid and HTML code to sections
+## Reset Dusk for new store
+In `settings_data.json`
+- change `social_[SOCIAL NETWORK]` to `""`
+- change `sections.header.settings.logo` to `""`
+
+In `index.json`
+- change `settings.carousel.blocks` to `{}`
+- change `settings.carousel.block_order` to `[]`
+- change `settings.image_banner` to `{}`
+- change `settings.cta-nav.blocks` to `{}`
+- change `settings.cta-nav.block_order` to `[]`
+- change `settings.featured_products.settings` to `{}`
+
+
 
 ## Links
 
