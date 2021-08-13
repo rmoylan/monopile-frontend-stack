@@ -29,7 +29,7 @@ Changes made from the local version will update almost immediately to the live s
 
 #### Dev
 
-Currently there is a bug in the CLI when first creating the shop, but is solved by following [this solution](https://github.com/Shopify/shopify-cli/issues/1309#issuecomment-873221248)
+Currently there is a bug in the CLI when first creating the shop, but is solved by creating a staff account with all access to the store, as mentioned here: [this solution](https://github.com/Shopify/shopify-cli/issues/1309#issuecomment-873221248)
 
 - Create dev store at partners.shopify.com
 - Log into store in CLI
